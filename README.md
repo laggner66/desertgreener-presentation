@@ -1,7 +1,3 @@
-# Schritt 1-3 wie oben, dann:
-
-# README.md erstellen
-cat > README.md << 'EOF'
 # DesertGreener: Europa geht das Wasser aus
 
 🌊 **Vollständige Präsentation: 100 Folien**
