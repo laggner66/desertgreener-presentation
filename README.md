@@ -20,9 +20,3 @@
 ## Kontakt
 **Weltwassertag Initiative 2026**  
 www.weltwassertag.at
-EOF
-
-# README commiten
-git add README.md
-git commit -m "Add README with presentation overview"
-git push origin main
