@@ -1,28 +1,38 @@
 <!doctype html>
-<html lang="en">
+<html lang="de">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>DesertGreener Presentation</title>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="DesertGreener Presentation" />
-  <meta property="og:description" content="Presentation and assets for DesertGreener." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://laggner66.github.io/desertgreener-presentation/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/laggner66/desertgreener-presentation/main/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="DesertGreener Presentation" />
-  <meta name="twitter:description" content="Presentation and assets for DesertGreener." />
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/laggner66/desertgreener-presentation/main/og-image.png" />
-
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>DesertGreener — Präsentation</title>
+<meta property="og:image" content="og-image.png"/>
+<style>body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:#111;color:#fff} .slide{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:2rem;box-sizing:border-box} .title{font-size:clamp(2rem,6vw,5rem);text-align:center} .subtitle{font-size:clamp(1rem,3vw,2rem);opacity:.85;text-align:center;margin-top:.5rem}</style>
 </head>
 <body>
-  <h1>DesertGreener Presentation</h1>
-  <p>This repository contains the presentation assets. The Open Graph image is at <code>/og-image.png</code>.</p>
+<section class="slide" id="s1">
+<div>
+<h1 class="title">DesertGreener</h1>
+<p class="subtitle">Eine kurze Präsentation</p>
+</div>
+</section>
+<section class="slide" id="s2" style="background:#0a4;">
+<div>
+<h2 class="title">Problem</h2>
+<p class="subtitle">Wüstengebiete begrünen — Herausforderungen & Chancen</p>
+</div>
+</section>
+<section class="slide" id="s3" style="background:#045;">
+<div>
+<h2 class="title">Lösungsansatz</h2>
+<p class="subtitle">Nachhaltige Pflanzenwahl, Bewässerung & Technik</p>
+</div>
+</section>
+<footer style="position:fixed;right:1rem;bottom:1rem;opacity:.6;font-size:.8rem">laggner66</footer>
+<script>
+const slides = Array.from(document.querySelectorAll('.slide'));
+let idx = 0;
+function show(i){slides[idx].style.display='none'; idx=(i+slides.length)%slides.length; slides[idx].style.display='flex'}
+slides.forEach((s,i)=>{if(i!==0) s.style.display='none'});
+document.addEventListener('keydown', e=>{if(e.key==='ArrowRight'||e.key==='PageDown') show(idx+1); if(e.key==='ArrowLeft'||e.key==='PageUp') show(idx-1)});
+</script>
 </body>
 </html>

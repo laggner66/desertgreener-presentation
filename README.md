@@ -1,22 +1,16 @@
-# DesertGreener: Europa geht das Wasser aus
+# DesertGreener — Präsentation
 
-🌊 **Vollständige Präsentation: 100 Folien**
-- 🌐 **Weltwassertag Initiative 2026:** www.weltwassertag.at
-- 📊 624 globale Dürre-Cluster analysiert
-- 💰 Big 4-Bewertungsmethodik (DCF, Multiples, Comparables)
-- 🪙 DGRX Token-Ökonomie-Visualisierung (400M EUR, 0,10 EUR)
+Kurze statische Präsentation.
 
-## 📥 Präsentation ansehen
+Vorschau lokal:
 
-[HTML-Datei herunterladen](./index.html) und im Browser öffnen
+- Öffne index.html im Browser
+- Oder mit einem einfachen HTTP-Server:
+  - Python 3: python -m http.server 8000
 
-## Highlights
-- 🌍 8 Regionen weltweit analysiert
-- 💧 ~9,3 km³ Wasserpotenzial (Ambition-Szenario)
-- 👥 17,3 Mio. Menschen versorgbar
-- 💼 290.000 Arbeitsplätze
-- 📈 Wissenschaftlich fundiert (Waldstein, Köppen-Geiger)
+Enthaltene Dateien:
+- index.html — die Präsentation
+- og-image.png — Social-Preview-Bild (kleiner Platzhalter)
+- README.md — diese Datei
 
-## Kontakt
-**Weltwassertag Initiative 2026**  
-www.weltwassertag.at
+Lizenz: MIT
